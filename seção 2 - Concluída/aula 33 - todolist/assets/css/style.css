@@ -1,0 +1,107 @@
+/* ======== BODY ======== */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;  /* Corrigido: era "100vhs" */
+    margin: 0;
+}
+
+/* ======== CONTAINER ======== */
+.container {
+    width: 400px;
+    text-align: center;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.50);
+}
+
+/* ======== INPUT ======== */
+#input-new-task{
+    width: 100%;
+    padding: 10px;
+
+    background-color: rgb(230, 230, 230);
+    border: none;
+    border-radius: 17px;
+
+    box-sizing: border-box; /* impede o padding de expandir largura */
+}
+
+/* ======== ÁREA DOS BOTÕES ======== */
+#space{
+    display: flex;
+    flex-direction: column; /* deixa um embaixo do outro */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* ======== BOTÃO ADICIONAR ======== */
+.adicionar-tarefa{
+    padding: 10px 15px;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 17px;
+
+    background: linear-gradient(135deg, #4CAF50, #45A049);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.adicionar-tarefa:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.adicionar-tarefa:active {
+    transform: scale(0.97);
+}
+
+/* ======== BOTÃO EXCLUIR ======== */
+.excluir-tarefa{
+    padding: 10px 15px;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 17px;
+
+    background: linear-gradient(135deg, #af4c4c, #a04545);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.excluir-tarefa:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.excluir-tarefa:active {
+    transform: scale(0.97);
+}
+
+/* ======== LISTA DE TAREFAS ======== */
+.tarefas {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.tarefas li {
+    text-align: left;
+}
