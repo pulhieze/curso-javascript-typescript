@@ -1,11 +1,11 @@
-// Dobre os numeros
-const numeros = [54, 3, 45, 12, 22, 40, 9, 87, 2, 5, 8];
+// // Dobre os numeros
+// const numeros = [54, 3, 45, 12, 22, 40, 9, 87, 2, 5, 8];
 
-const numerosEmDobro = numeros.map((valor) => {
-  return valor * 2; 
-});
+// const numerosEmDobro = numeros.map((valor) => {
+//   return valor * 2; 
+// });
 
-console.log(numerosEmDobro);
+// console.log(numerosEmDobro);
 
 
 const pessoas = [
@@ -25,5 +25,9 @@ const idade = pessoas.map((obj) => {
     return { idade: obj.idade };
 });
 
-console.log(nomes);
-console.log(idade);
+const ids = pessoas.map((obj, indice) => {
+    obj.id = (indice + 1) * 1000;
+    return obj;
+})
+
+console.log(ids);
