@@ -1,10 +1,10 @@
-// filter -> Sempre retorna um array com a mesma quantidade de elementos ou menos
+// Serve para filtrar elementos com base em uma condição.
 
 // Retorne os números maiores que 10
 const numeros = [54, 3, 45, 12, 22, 40, 9, 87, 2, 5, 8];
 
 const numerosFiltradoas = numeros.filter((valor) => {
-    return valor > 10;
+    return valor > 10; // <- Condição
 });
 console.log(numerosFiltradoas);
 

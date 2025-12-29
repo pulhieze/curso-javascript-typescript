@@ -1,3 +1,5 @@
+// Serve para transformar todos os itens do array e retornar um novo array do mesmo tamanho.
+
 // // Dobre os numeros
 // const numeros = [54, 3, 45, 12, 22, 40, 9, 87, 2, 5, 8];
 
